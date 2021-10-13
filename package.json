@@ -4,13 +4,21 @@
   "description": "node testing",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "babel-node --trace-warnings index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "async": "^3.2.1",
     "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
   }
 }
