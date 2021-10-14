@@ -5,20 +5,20 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node --trace-warnings index.js",
+    "server": "nodemon server.js --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
     "@babel/node": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
-    "async": "^3.2.1",
-    "chalk": "^4.1.2"
-  },
-  "devDependencies": {
     "nodemon": "^2.0.13"
   }
 }
